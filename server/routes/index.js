@@ -8,7 +8,9 @@ module.exports = (app) => {
   }));
 
   app.post('/api/todos', todosController.create);
+
   app.get('/api/todos', todosController.list);
+
   app.get('/api/todos/:todoId', todosController.retrieve);
   app.put('/api/todos/:todoId', todosController.update);
   app.delete('/api/todos/:todoId', todosController.destroy);
@@ -24,5 +26,8 @@ module.exports = (app) => {
   }));
 
   app.post('/api/users/', usersController.create);
+  app.get('/api/users/:userId', usersController.read);
+  app.put('/api/users/:userId', usersController.update);
+  app.delete('/api/users/:userId', usersController.delete);
 
 };
