@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "macpan",
+    "password": "borat",
+    "database": "todos-dev-02",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "macpan",
+    "password": "borat",
+    "database": "todos-test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "postgres://voinypxl:90ELF_-snSszZTIEY8bp3-roBnH7I4Hk@stampy.db.elephantsql.com:5432/voinypxl"
+  }
+}
